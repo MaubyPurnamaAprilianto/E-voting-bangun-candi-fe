@@ -22,7 +22,7 @@ const Vote = () => {
 
     const fetchCandidates = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/users/candidates");
+        const response = await axios.get("https://gqk2bgt5-5001.asse.devtunnels.ms/");
         setCandidates(response.data);
       } catch (error) {
         console.error("Error fetching candidates:", error);
